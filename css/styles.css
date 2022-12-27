@@ -67,9 +67,6 @@ a {
   color: var(--accent-color);
 }
 
-.paragraph {
-  margin-top: 8px;
-}
 
 .list img {
   display: block;
@@ -144,8 +141,19 @@ a {
 
 /*index.html*/
 .hero {
+  /* width: 1440px; */
+  height: 600px;
   text-align: center;
   background-color: var(--secondary-color);
+  background-image: linear-gradient(
+     to right,
+     rgba(46, 47, 66, 0.7),
+     rgba(46, 47, 66, 0.7)
+      ), 
+      url(../images/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .heading-hero {
@@ -182,12 +190,24 @@ a {
 .hero .buttons:focus {
   color: var(--primary-white-color);
   background-color: var(--secondary-accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+.button {
+  padding: 0;
+  border: none;
+  margin-bottom: 8px;
+  width: 264px;
+  height: 112px;
+  background-color: var(--background-our-team-buttons);
+  border-radius: 4px;
+}
+
 
 .features-list {
   display: flex;
@@ -198,6 +218,7 @@ a {
 }
 
 .features-list h3 {
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -267,6 +288,7 @@ a {
 }
 
 .team-list h3 {
+  margin-bottom: 8px;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -276,6 +298,7 @@ a {
 }
 
 .team-list p {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
@@ -286,7 +309,57 @@ a {
 .team-item:not(:last-child) {
   margin-right: 24px;
 }
+ .team-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
 
+ .list-icon-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .list-icon-item:not(:last-child) {
+  margin-right: 24px;
+ }
+
+ .link-icon {
+  
+ }
+
+ .icon-item {
+  width: 16px;
+  height: 16px;
+ }
+
+ .clients-heading {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1,16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+ }
+
+ .clients-list {
+  display: flex;
+ }
+
+ .clients-list-item {
+  width: 168px;
+  height: 88px;
+ }
+
+ .clients-list-item:not(:last-child) {
+  margin-right: 24px;
+ }
 /*footer*/
 .page-footer {
   background-color: var(--secondary-color);
