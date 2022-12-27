@@ -141,7 +141,7 @@ a {
 
 /*index.html*/
 .hero {
-  /* width: 1440px; */
+  padding-top: 192px;
   height: 600px;
   text-align: center;
   background-color: var(--secondary-color);
@@ -315,7 +315,11 @@ a {
   align-items: center;
  }
 
- .list-icon-item {
+ .list-icon-item:not(:last-child) {
+  margin-right: 24px;
+ }
+
+ .link-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -325,17 +329,14 @@ a {
   justify-content: center;
  }
 
- .list-icon-item:not(:last-child) {
-  margin-right: 24px;
- }
-
- .link-icon {
-  
- }
-
- .icon-item {
-  width: 16px;
-  height: 16px;
+ .clients-list-link {
+  width: 168px;
+  height: 88px;
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
  }
 
  .clients-heading {
@@ -352,14 +353,15 @@ a {
   display: flex;
  }
 
- .clients-list-item {
-  width: 168px;
-  height: 88px;
- }
-
  .clients-list-item:not(:last-child) {
   margin-right: 24px;
  }
+
+ .icon-logo:hover,
+ .icon-logo:focus {
+  fill: var(--accent-color);
+ }
+
 /*footer*/
 .page-footer {
   background-color: var(--secondary-color);
@@ -367,8 +369,13 @@ a {
   padding-bottom: 100px;
 }
 
+.footer {
+  display: flex;
+}
+
 .logo-block {
   width: 264px;
+  margin-right: 120px;
 }
 
 footer .logo {
@@ -385,6 +392,38 @@ footer .logo {
   letter-spacing: 0.02em;
   color: var(--footer-color);
   margin-top: 16px;
+}
+
+.footer-heading {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-white-color);
+}
+
+.footer-list {
+  display: flex;
+}
+
+.footer-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.footer-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #31D0AA;
 }
 
 /*portfolio.html*/
@@ -428,6 +467,8 @@ footer .logo {
   border: 1px solid var(--accent-color);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .projects-list {
@@ -446,6 +487,13 @@ footer .logo {
 .projects-item {
   border-bottom: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.projects-item:hover,
+.projects-item:focus {
+  border: 0.5px solid #F4F4FD;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16),
+  0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .projects-list h2 {
