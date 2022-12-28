@@ -198,14 +198,16 @@ a {
   padding-bottom: 120px;
 }
 
-.button {
+.features-icon {
   padding: 0;
   border: none;
   margin-bottom: 8px;
-  width: 264px;
   height: 112px;
   background-color: var(--background-our-team-buttons);
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -329,6 +331,11 @@ a {
   justify-content: center;
  }
 
+ .link-icon:hover,
+ .link-icon:focus {
+  background-color: var(--secondary-accent-color);
+ }
+
  .clients-list-link {
   width: 168px;
   height: 88px;
@@ -337,6 +344,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+ }
+ .clients-list-link:hover,
+ .clients-list-link:focus {
+  fill: var(--accent-color);
  }
 
  .clients-heading {
