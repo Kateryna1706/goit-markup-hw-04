@@ -341,14 +341,18 @@ a {
   height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
+  padding: 16px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
  }
+
+ 
  .clients-list-link:hover,
  .clients-list-link:focus {
   fill: var(--accent-color);
  }
+
 
  .clients-heading {
   margin-bottom: 72px;
@@ -366,11 +370,6 @@ a {
 
  .clients-list-item:not(:last-child) {
   margin-right: 24px;
- }
-
- .icon-logo:hover,
- .icon-logo:focus {
-  fill: var(--accent-color);
  }
 
 /*footer*/
