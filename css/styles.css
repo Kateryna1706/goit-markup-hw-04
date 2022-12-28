@@ -372,6 +372,9 @@ a {
   margin-right: 24px;
  }
 
+ .icon-logo {
+  fill: #8E8F99;
+ }
 /*footer*/
 .page-footer {
   background-color: var(--secondary-color);
