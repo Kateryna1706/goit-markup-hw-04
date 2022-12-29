@@ -345,12 +345,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #8E8F99;
  }
 
  
  .clients-list-link:hover,
  .clients-list-link:focus {
   fill: var(--accent-color);
+  border-color: var(--accent-color);
  }
 
 
@@ -372,9 +374,6 @@ a {
   margin-right: 24px;
  }
 
- .icon-logo {
-  fill: #8E8F99;
- }
 /*footer*/
 .page-footer {
   background-color: var(--secondary-color);
