@@ -337,11 +337,9 @@ a {
  }
 
  .clients-list-link {
-  width: 168px;
   height: 88px;
   border: 1px solid #8E8F99;
   border-radius: 4px;
-  padding: 16px 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,6 +366,10 @@ a {
 
  .clients-list {
   display: flex;
+ }
+
+ .clients-list-item {
+  width: calc((100%-120px)/6);
  }
 
  .clients-list-item:not(:last-child) {
